@@ -21,10 +21,11 @@ from xtuner.utils import PROMPT_TEMPLATE
 #                          PART 1  Settings                           #
 #######################################################################
 # Model
-pretrained_model_name_or_path = 'mistralai/Mixtral-8x7B-v0.1'
+pretrained_model_name_or_path = '/workspace/mixtral-8x7b-32kseqlen'
 
 # Data
-data_path = 'timdettmers/openassistant-guanaco'
+#data_path = 'timdettmers/openassistant-guanaco'
+data_path = 'lighteval/bbq_helm'
 prompt_template = PROMPT_TEMPLATE.mixtral
 max_length = 2048
 pack_to_max_length = True
